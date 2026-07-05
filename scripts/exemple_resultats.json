@@ -1,0 +1,57 @@
+{
+  "devoir": {
+    "id": "ts-dv3",
+    "classe": "TSTMG",
+    "matiere": "droit",
+    "theme": "d6",
+    "titre": "Devoir n°3 — La responsabilité civile",
+    "date": "2026-11-20",
+    "note_max": 20
+  },
+  "resultats": [
+    {
+      "nom": "Dupont",
+      "prenom": "Léa",
+      "note": 13.5,
+      "pdf": null,
+      "retours": [
+        {
+          "question": "Q1",
+          "intitule": "Qualification juridique des faits",
+          "points": 3,
+          "points_max": 4,
+          "commentaire": "Bonne traduction des faits en vocabulaire juridique. Le terme « gardien de la chose » devait apparaître."
+        },
+        {
+          "question": "Q2",
+          "intitule": "Argumentation de la victime (syllogisme)",
+          "points": 4.5,
+          "points_max": 6,
+          "commentaire": "Syllogisme complet et bien structuré. La règle gagnerait à être citée plus précisément."
+        }
+      ]
+    },
+    {
+      "code": "k7m2p9",
+      "note": 9,
+      "pdf": "pdfs/ts-dv3/k7m2p9.pdf",
+      "retours": [
+        {
+          "question": "Q1",
+          "intitule": "Qualification juridique des faits",
+          "points": 1.5,
+          "points_max": 4,
+          "commentaire": "Tu racontes les faits sans les qualifier juridiquement. Reprends la fiche méthode : chaque élément factuel doit être traduit en catégorie juridique."
+        }
+      ]
+    }
+  ],
+  "_documentation": {
+    "devoir.id": "Identifiant unique et stable, ex. '1s-dv1', 'ts-dv3'",
+    "devoir.matiere": "'droit' ou 'eco'",
+    "devoir.theme": "id d'un thème de data/devoirs.json (d1..d8, e1..e9)",
+    "resultats[].identification": "Soit 'code' directement, soit 'nom'+'prenom' avec l'option --codes",
+    "resultats[].pdf": "Chemin relatif à la racine du repo vers la copie annotée, ou null",
+    "resultats[].retours": "Repris de la checklist du barème : un objet par question, tutoiement, pas d'appréciation générale"
+  }
+}

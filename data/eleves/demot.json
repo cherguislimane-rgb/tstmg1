@@ -1,0 +1,76 @@
+{
+  "code": "demot",
+  "classe": "TSTMG",
+  "maj": "2026-07-04",
+  "copies": [
+    {
+      "devoir_id": "ts-demo-1",
+      "note": 9.5,
+      "moyenne_classe": 10.2,
+      "percentile": 42,
+      "effectif": 26,
+      "pdf": null,
+      "retours": [
+        {
+          "question": "Q1",
+          "intitule": "Qualification juridique des faits",
+          "points": 2,
+          "points_max": 4,
+          "commentaire": "Les parties sont identifiées mais la situation n'est pas traduite en termes juridiques : « contrat de vente », « obligation de délivrance conforme » devaient apparaître."
+        },
+        {
+          "question": "Q2",
+          "intitule": "Argumentation de l'acheteur (syllogisme)",
+          "points": 3.5,
+          "points_max": 6,
+          "commentaire": "La structure règle → application → conclusion est présente, c'est un vrai progrès. La règle citée doit être plus précise : quelles sont les conditions de la garantie légale de conformité ?"
+        },
+        {
+          "question": "Q3",
+          "intitule": "Argumentation du vendeur (syllogisme)",
+          "points": 2,
+          "points_max": 6,
+          "commentaire": "Attention : tu réfutes toi-même l'argumentation du vendeur. Chaque question défend un seul camp, sans concession à l'adversaire."
+        },
+        {
+          "question": "Q4",
+          "intitule": "Question de réflexion",
+          "points": 2,
+          "points_max": 4,
+          "commentaire": "Un argument pertinent mais un seul. La grille attend une réflexion nuancée avec plusieurs arguments illustrés."
+        }
+      ]
+    },
+    {
+      "devoir_id": "ts-demo-2",
+      "note": 13,
+      "moyenne_classe": 11.1,
+      "percentile": 71,
+      "effectif": 26,
+      "pdf": null,
+      "retours": [
+        {
+          "question": "Q1",
+          "intitule": "Les défaillances du marché",
+          "points": 5,
+          "points_max": 6,
+          "commentaire": "Les externalités négatives sont bien identifiées et définies. Un exemple chiffré tiré du document aurait complété l'analyse."
+        },
+        {
+          "question": "Q2",
+          "intitule": "Les modalités d'intervention de l'État",
+          "points": 4,
+          "points_max": 8,
+          "commentaire": "La réglementation et la taxation sont citées. Il manque la subvention et surtout l'explication du mécanisme : comment chaque instrument corrige-t-il la défaillance ?"
+        },
+        {
+          "question": "Q3",
+          "intitule": "Argumentation structurée",
+          "points": 4,
+          "points_max": 6,
+          "commentaire": "Nette progression sur la structure : introduction, deux arguments, conclusion. Poursuis dans cette voie en soignant les transitions."
+        }
+      ]
+    }
+  ]
+}

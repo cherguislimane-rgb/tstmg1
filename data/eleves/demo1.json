@@ -1,0 +1,76 @@
+{
+  "code": "demo1",
+  "classe": "1STMG",
+  "maj": "2026-07-04",
+  "copies": [
+    {
+      "devoir_id": "1s-demo-1",
+      "note": 12.5,
+      "moyenne_classe": 10.8,
+      "percentile": 68,
+      "effectif": 28,
+      "pdf": null,
+      "retours": [
+        {
+          "question": "Q1",
+          "intitule": "Qualification juridique des faits",
+          "points": 3,
+          "points_max": 4,
+          "commentaire": "Tu identifies correctement les parties et leur statut juridique. Attention : tu racontes encore les faits au lieu de les traduire systématiquement en vocabulaire juridique. Le terme « demandeur » devait apparaître."
+        },
+        {
+          "question": "Q2",
+          "intitule": "Argumentation du demandeur (syllogisme)",
+          "points": 4.5,
+          "points_max": 6,
+          "commentaire": "La règle de droit est bien énoncée et l'application aux faits est cohérente. Il manque une conclusion explicite qui referme le syllogisme."
+        },
+        {
+          "question": "Q3",
+          "intitule": "Argumentation du défendeur (syllogisme)",
+          "points": 3,
+          "points_max": 6,
+          "commentaire": "Tu défends le bon camp mais la règle de droit invoquée est incomplète. Revois les conditions d'application vues en cours."
+        },
+        {
+          "question": "Q4",
+          "intitule": "Question de réflexion",
+          "points": 2,
+          "points_max": 4,
+          "commentaire": "Des idées pertinentes mais insuffisamment structurées. Appuie-toi sur au moins deux arguments distincts et illustrés."
+        }
+      ]
+    },
+    {
+      "devoir_id": "1s-demo-2",
+      "note": 14,
+      "moyenne_classe": 11.5,
+      "percentile": 79,
+      "effectif": 28,
+      "pdf": null,
+      "retours": [
+        {
+          "question": "Q1",
+          "intitule": "Identification des agents économiques",
+          "points": 4,
+          "points_max": 4,
+          "commentaire": "Parfait : les trois agents sont identifiés avec leur fonction principale. Rien à redire."
+        },
+        {
+          "question": "Q2",
+          "intitule": "Analyse du problème de rareté",
+          "points": 5,
+          "points_max": 8,
+          "commentaire": "La notion de rareté est comprise. Ton analyse gagnerait à mobiliser le vocabulaire du programme : besoins illimités, ressources limitées, arbitrage."
+        },
+        {
+          "question": "Q3",
+          "intitule": "Exploitation du document statistique",
+          "points": 5,
+          "points_max": 8,
+          "commentaire": "Bonne lecture des données. Pense à citer les chiffres précis avec leur unité et leur date pour appuyer chaque affirmation."
+        }
+      ]
+    }
+  ]
+}

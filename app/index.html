@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0D1220">
+<title>Mes Copies · Éco-Droit STMG</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="icon" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0D1220;
+    --card: rgba(255, 255, 255, 0.055);
+    --card-strong: rgba(255, 255, 255, 0.09);
+    --border: rgba(255, 255, 255, 0.12);
+    --text: #EAEEF7;
+    --muted: #8B93A7;
+    --accent: #F2A65A;
+    --good: #55C89B;
+    --mid: #F2C94C;
+    --bad: #E56B6F;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 80% 40% at 15% -5%, rgba(242, 166, 90, 0.12), transparent),
+      radial-gradient(ellipse 70% 40% at 95% 105%, rgba(232, 115, 90, 0.08), transparent);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    min-height: 100vh;
+    padding-bottom: 90px;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 20px 16px 0; }
+
+  /* ---------- Header ---------- */
+  header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+  .hello h1 { font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 700; }
+  .hello p { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  .logout {
+    background: var(--card); border: 1px solid var(--border);
+    color: var(--muted); border-radius: 12px; padding: 8px 12px;
+    font-family: 'Inter', sans-serif; font-size: 12.5px; font-weight: 600; cursor: pointer;
+  }
+
+  /* ---------- Cards ---------- */
+  .glass {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 18px;
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .1em; color: var(--muted);
+    margin: 22px 4px 12px;
+  }
+
+  /* ---------- Copie card ---------- */
+  .copie {
+    display: flex; align-items: center; gap: 14px;
+    cursor: pointer; transition: background .2s;
+  }
+  .copie:active { background: var(--card-strong); }
+  .copie-info { flex: 1; min-width: 0; }
+  .chip {
+    display: inline-block; font-size: 10.5px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .07em;
+    padding: 3px 8px; border-radius: 999px; margin-bottom: 6px;
+  }
+  .chip.droit { background: rgba(122, 162, 247, .15); color: #9AB4FF; }
+  .chip.eco { background: rgba(242, 166, 90, .15); color: var(--accent); }
+  .copie-titre { font-size: 14.5px; font-weight: 600; line-height: 1.35; }
+  .copie-date { font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+  /* ---------- Note ring (signature) ---------- */
+  .ring { position: relative; width: 62px; height: 62px; flex-shrink: 0; }
+  .ring svg { transform: rotate(-90deg); }
+  .ring circle { fill: none; stroke-width: 5; }
+  .ring .track { stroke: rgba(255,255,255,.1); }
+  .ring .val { stroke-linecap: round; transition: stroke-dashoffset .8s cubic-bezier(.3,.8,.3,1); }
+  .ring .num {
+    position: absolute; inset: 0; display: grid; place-items: center;
+    font-family: 'Sora', sans-serif; font-weight: 700; font-size: 16px;
+    font-variant-numeric: tabular-nums;
+  }
+  .ring .num small { font-size: 9px; color: var(--muted); font-weight: 600; margin-top: -2px; }
+  .ring .num > div { display: flex; flex-direction: column; align-items: center; }
+
+  /* ---------- Detail (modal) ---------- */
+  .modal {
+    position: fixed; inset: 0; z-index: 50;
+    background: rgba(8, 11, 20, .75);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    display: none; align-items: flex-end; justify-content: center;
+  }
+  .modal.open { display: flex; }
+  .sheet {
+    width: 100%; max-width: 560px; max-height: 88vh; overflow-y: auto;
+    background: #141B2E;
+    border: 1px solid var(--border); border-bottom: none;
+    border-radius: 24px 24px 0 0;
+    padding: 22px 20px 40px;
+    animation: slideUp .32s cubic-bezier(.2,.8,.3,1) both;
+  }
+  @keyframes slideUp { from { transform: translateY(40px); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .sheet { animation: none; } }
+  .sheet-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+  .sheet h2 { font-family: 'Sora', sans-serif; font-size: 18px; line-height: 1.35; }
+  .close {
+    background: var(--card-strong); border: 1px solid var(--border);
+    color: var(--text); width: 34px; height: 34px; border-radius: 50%;
+    font-size: 16px; cursor: pointer; flex-shrink: 0;
+  }
+  .stats-row { display: flex; gap: 10px; margin-bottom: 20px; }
+  .stat {
+    flex: 1; text-align: center; background: var(--card);
+    border: 1px solid var(--border); border-radius: 16px; padding: 12px 6px;
+  }
+  .stat b { display: block; font-family: 'Sora', sans-serif; font-size: 19px; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: 11px; color: var(--muted); }
+  .retour { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 14px; margin-bottom: 10px; }
+  .retour-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+  .retour-head b { font-size: 13.5px; }
+  .retour-pts { font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .bar { height: 5px; border-radius: 99px; background: rgba(255,255,255,.1); overflow: hidden; margin-bottom: 10px; }
+  .bar i { display: block; height: 100%; border-radius: 99px; }
+  .retour p { font-size: 13.5px; line-height: 1.55; color: #C6CCDD; }
+  .pdf-link {
+    display: block; text-align: center; margin-top: 14px; padding: 13px;
+    background: var(--accent); color: #201409; border-radius: 14px;
+    font-weight: 700; font-size: 14.5px; text-decoration: none;
+  }
+
+  /* ---------- Progression ---------- */
+  .chart-box { padding: 18px 12px 8px; }
+  .chart-box h3, .themes-box h3 { font-family: 'Sora', sans-serif; font-size: 14.5px; margin-bottom: 14px; padding-left: 6px; }
+  .seg { display: flex; background: rgba(0,0,0,.25); border-radius: 12px; padding: 3px; margin-bottom: 14px; }
+  .seg button {
+    flex: 1; padding: 9px; border: none; border-radius: 10px;
+    background: transparent; color: var(--muted);
+    font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 700; cursor: pointer;
+  }
+  .seg button.on { background: var(--card-strong); color: var(--text); }
+  .theme-item { display: flex; align-items: center; gap: 12px; padding: 12px 4px; border-bottom: 1px solid rgba(255,255,255,.06); }
+  .theme-item:last-child { border-bottom: none; }
+  .milestone {
+    width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
+    display: grid; place-items: center;
+    font-family: 'Sora', sans-serif; font-size: 12px; font-weight: 700;
+    border: 2px solid var(--border); color: var(--muted); background: rgba(0,0,0,.2);
+  }
+  .milestone.done { border-color: var(--good); color: var(--good); }
+  .milestone.mid { border-color: var(--mid); color: var(--mid); }
+  .milestone.low { border-color: var(--bad); color: var(--bad); }
+  .theme-item .t { flex: 1; font-size: 13px; line-height: 1.4; }
+  .theme-item .m { font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+
+  /* ---------- Badges ---------- */
+  .badges { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .badge {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 18px; padding: 16px 12px; text-align: center;
+  }
+  .badge .ico { font-size: 30px; margin-bottom: 8px; filter: grayscale(1) opacity(.35); }
+  .badge.won .ico { filter: none; }
+  .badge.won { border-color: rgba(242, 166, 90, .45); background: rgba(242, 166, 90, .07); }
+  .badge b { display: block; font-family: 'Sora', sans-serif; font-size: 12.5px; margin-bottom: 4px; }
+  .badge span { font-size: 11px; color: var(--muted); line-height: 1.4; display: block; }
+
+  /* ---------- Tab bar ---------- */
+  nav {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 40;
+    background: rgba(13, 18, 32, .85);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border);
+    display: flex; justify-content: space-around;
+    padding: 8px 0 max(10px, env(safe-area-inset-bottom));
+  }
+  nav button {
+    background: none; border: none; color: var(--muted);
+    font-family: 'Inter', sans-serif; font-size: 10.5px; font-weight: 600;
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    cursor: pointer; padding: 4px 18px; border-radius: 12px;
+  }
+  nav button .i { font-size: 21px; }
+  nav button.on { color: var(--accent); }
+  .empty { text-align: center; color: var(--muted); font-size: 14px; padding: 40px 20px; line-height: 1.6; }
+  .page { display: none; }
+  .page.on { display: block; }
+  button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="hello">
+      <h1 id="hello">Bonjour !</h1>
+      <p id="classe-label"></p>
+    </div>
+    <button class="logout" id="logout">Changer de code</button>
+  </header>
+
+  <!-- PAGE 1 : COPIES -->
+  <section class="page on" id="page-copies">
+    <div class="section-title">Mes copies corrigées</div>
+    <div id="copies-list"></div>
+  </section>
+
+  <!-- PAGE 2 : PROGRESSION -->
+  <section class="page" id="page-progression">
+    <div class="section-title">Mon évolution</div>
+    <div class="glass chart-box">
+      <h3>Notes au fil de l'année</h3>
+      <div id="chart"></div>
+    </div>
+    <div class="section-title">Avancement dans le programme</div>
+    <div class="glass themes-box">
+      <div class="seg">
+        <button data-mat="droit" class="on">Droit</button>
+        <button data-mat="eco">Économie</button>
+      </div>
+      <div id="themes-list"></div>
+    </div>
+  </section>
+
+  <!-- PAGE 3 : BADGES -->
+  <section class="page" id="page-badges">
+    <div class="section-title">Mes badges</div>
+    <div class="badges" id="badges-list"></div>
+  </section>
+</div>
+
+<!-- Modal détail copie -->
+<div class="modal" id="modal">
+  <div class="sheet" id="sheet"></div>
+</div>
+
+<nav>
+  <button class="on" data-page="copies"><span class="i">📝</span>Copies</button>
+  <button data-page="progression"><span class="i">📈</span>Progression</button>
+  <button data-page="badges"><span class="i">🏅</span>Badges</button>
+</nav>
+
+<script>
+(async function () {
+  const code = localStorage.getItem('eleve_code');
+  if (!code) { location.replace('../'); return; }
+
+  let CONF, ELEVE;
+  try {
+    const [c, e] = await Promise.all([
+      fetch('../data/devoirs.json', { cache: 'no-store' }).then(r => r.json()),
+      fetch(`../data/eleves/${encodeURIComponent(code)}.json`, { cache: 'no-store' }).then(r => { if (!r.ok) throw 0; return r.json(); })
+    ]);
+    CONF = c; ELEVE = e;
+  } catch (err) {
+    localStorage.removeItem('eleve_code');
+    location.replace('../');
+    return;
+  }
+
+  const classe = CONF.classes[ELEVE.classe] || { nom: ELEVE.classe, accent: '#F2A65A' };
+  document.documentElement.style.setProperty('--accent', classe.accent);
+  document.getElementById('classe-label').textContent = classe.nom + ' · Économie-Droit';
+
+  // Prénom local (jamais envoyé nulle part)
+  let prenom = localStorage.getItem('prenom_local');
+  if (!prenom) {
+    prenom = (window.prompt('Ton prénom ? (il reste uniquement sur ton téléphone)') || '').trim();
+    if (prenom) localStorage.setItem('prenom_local', prenom);
+  }
+  document.getElementById('hello').textContent = prenom ? `Bonjour ${prenom} !` : 'Bonjour !';
+
+  document.getElementById('logout').onclick = () => {
+    localStorage.removeItem('eleve_code');
+    localStorage.removeItem('prenom_local');
+    location.replace('../');
+  };
+
+  const devoirById = Object.fromEntries(CONF.devoirs.map(d => [d.id, d]));
+  const copies = (ELEVE.copies || [])
+    .filter(c => devoirById[c.devoir_id])
+    .sort((a, b) => devoirById[a.devoir_id].date < devoirById[b.devoir_id].date ? 1 : -1);
+
+  const fmtDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+  const fmtNote = n => (Math.round(n * 10) / 10).toLocaleString('fr-FR');
+  const noteColor = (n, max) => { const r = n / max; return r >= 0.6 ? 'var(--good)' : r >= 0.4 ? 'var(--mid)' : 'var(--bad)'; };
+
+  function ringHTML(note, max, size = 62) {
+    const r = (size - 6) / 2, c = 2 * Math.PI * r;
+    const off = c * (1 - Math.min(note / max, 1));
+    const col = noteColor(note, max);
+    return `<div class="ring" style="width:${size}px;height:${size}px">
+      <svg width="${size}" height="${size}">
+        <circle class="track" cx="${size/2}" cy="${size/2}" r="${r}"></circle>
+        <circle class="val" cx="${size/2}" cy="${size/2}" r="${r}" stroke="${col}"
+          stroke-dasharray="${c}" stroke-dashoffset="${off}"></circle>
+      </svg>
+      <div class="num"><div>${fmtNote(note)}<small>/ ${max}</small></div></div>
+    </div>`;
+  }
+
+  /* ---------- Copies ---------- */
+  const list = document.getElementById('copies-list');
+  if (!copies.length) {
+    list.innerHTML = `<div class="glass empty">Aucune copie corrigée pour l'instant.<br>Elles apparaîtront ici dès que ton professeur aura terminé les corrections. 📬</div>`;
+  } else {
+    list.innerHTML = copies.map((c, i) => {
+      const d = devoirById[c.devoir_id];
+      return `<div class="glass copie" data-i="${i}" role="button" tabindex="0" aria-label="Ouvrir ${d.titre}">
+        <div class="copie-info">
+          <span class="chip ${d.matiere}">${d.matiere === 'droit' ? 'Droit' : 'Économie'}</span>
+          <div class="copie-titre">${d.titre}</div>
+          <div class="copie-date">${fmtDate(d.date)}</div>
+        </div>
+        ${ringHTML(c.note, d.note_max)}
+      </div>`;
+    }).join('');
+  }
+
+  const modal = document.getElementById('modal');
+  const sheet = document.getElementById('sheet');
+  function openCopie(i) {
+    const c = copies[i], d = devoirById[c.devoir_id];
+    const retours = (c.retours || []).map(r => `
+      <div class="retour">
+        <div class="retour-head">
+          <b>${r.question} — ${r.intitule}</b>
+          <span class="retour-pts" style="color:${noteColor(r.points, r.points_max)}">${fmtNote(r.points)} / ${r.points_max}</span>
+        </div>
+        <div class="bar"><i style="width:${Math.min(r.points / r.points_max * 100, 100)}%;background:${noteColor(r.points, r.points_max)}"></i></div>
+        <p>${r.commentaire}</p>
+      </div>`).join('');
+    const stats = `
+      <div class="stats-row">
+        <div class="stat"><b style="color:${noteColor(c.note, d.note_max)}">${fmtNote(c.note)}</b><span>Ta note / ${d.note_max}</span></div>
+        ${c.moyenne_classe != null ? `<div class="stat"><b>${fmtNote(c.moyenne_classe)}</b><span>Moyenne classe</span></div>` : ''}
+        ${c.percentile != null ? `<div class="stat"><b>${c.percentile}\u00A0%</b><span>d'élèves derrière toi</span></div>` : ''}
+      </div>`;
+    sheet.innerHTML = `
+      <div class="sheet-head">
+        <div>
+          <span class="chip ${d.matiere}">${d.matiere === 'droit' ? 'Droit' : 'Économie'}</span>
+          <h2>${d.titre}</h2>
+        </div>
+        <button class="close" aria-label="Fermer">✕</button>
+      </div>
+      ${stats}
+      ${retours || '<div class="empty">Retour détaillé bientôt disponible.</div>'}
+      ${c.pdf ? `<a class="pdf-link" href="../${c.pdf}" target="_blank" rel="noopener">📄 Voir ma copie annotée (PDF)</a>` : ''}`;
+    modal.classList.add('open');
+    sheet.querySelector('.close').onclick = () => modal.classList.remove('open');
+  }
+  modal.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('open'); });
+  list.addEventListener('click', e => { const el = e.target.closest('.copie'); if (el) openCopie(+el.dataset.i); });
+  list.addEventListener('keydown', e => { const el = e.target.closest('.copie'); if (el && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openCopie(+el.dataset.i); } });
+
+  /* ---------- Chart ---------- */
+  function drawChart() {
+    const box = document.getElementById('chart');
+    const pts = [...copies].reverse().map(c => ({ n: c.note, m: devoirById[c.devoir_id].note_max, moy: c.moyenne_classe }));
+    if (pts.length < 2) { box.innerHTML = `<div class="empty">Le graphique apparaîtra à partir de ta deuxième copie. 📈</div>`; return; }
+    const W = 480, H = 190, P = 30;
+    const x = i => P + i * (W - 2 * P) / (pts.length - 1);
+    const y = v => H - P - (v / 20) * (H - 2 * P);
+    const line = arr => arr.map((v, i) => `${i ? 'L' : 'M'}${x(i)},${y(v)}`).join(' ');
+    const notes = pts.map(p => p.n * 20 / p.m);
+    const moys = pts.map(p => p.moy != null ? p.moy * 20 / p.m : null);
+    const hasMoy = moys.every(v => v != null);
+    box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Évolution de tes notes">
+      ${[5, 10, 15, 20].map(v => `<line x1="${P}" x2="${W - P}" y1="${y(v)}" y2="${y(v)}" stroke="rgba(255,255,255,.07)"/>
+        <text x="${P - 8}" y="${y(v) + 4}" fill="#8B93A7" font-size="10" text-anchor="end">${v}</text>`).join('')}
+      ${hasMoy ? `<path d="${line(moys)}" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="2" stroke-dasharray="5 5"/>` : ''}
+      <path d="${line(notes)}" fill="none" stroke="${classe.accent}" stroke-width="3" stroke-linecap="round"/>
+      ${notes.map((v, i) => `<circle cx="${x(i)}" cy="${y(v)}" r="4.5" fill="${classe.accent}"/>
+        <text x="${x(i)}" y="${y(v) - 11}" fill="#EAEEF7" font-size="11" font-weight="700" text-anchor="middle">${fmtNote(v)}</text>`).join('')}
+    </svg>
+    ${hasMoy ? `<p style="font-size:11px;color:var(--muted);text-align:center;padding-bottom:8px">— Toi &nbsp;&nbsp; ┄ Moyenne de la classe &nbsp;(notes ramenées sur 20)</p>` : ''}`;
+  }
+  drawChart();
+
+  /* ---------- Thèmes ---------- */
+  function renderThemes(mat) {
+    const themes = (CONF.programme[ELEVE.classe] || {})[mat] || [];
+    const el = document.getElementById('themes-list');
+    el.innerHTML = themes.map((t, idx) => {
+      const cs = copies.filter(c => { const d = devoirById[c.devoir_id]; return d.matiere === mat && d.theme === t.id; });
+      let cls = '', label = 'Pas encore évalué', inner = idx + 1;
+      if (cs.length) {
+        const avg = cs.reduce((s, c) => s + c.note * 20 / devoirById[c.devoir_id].note_max, 0) / cs.length;
+        cls = avg >= 12 ? 'done' : avg >= 8 ? 'mid' : 'low';
+        label = `${cs.length} copie${cs.length > 1 ? 's' : ''} · moyenne ${fmtNote(avg)}/20`;
+        if (cls === 'done') inner = '✓';
+      }
+      return `<div class="theme-item">
+        <div class="milestone ${cls}">${inner}</div>
+        <div><div class="t">${t.titre}</div><div class="m">${label}</div></div>
+      </div>`;
+    }).join('');
+  }
+  renderThemes('droit');
+  document.querySelectorAll('.seg button').forEach(b => b.onclick = () => {
+    document.querySelectorAll('.seg button').forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    renderThemes(b.dataset.mat);
+  });
+
+  /* ---------- Badges ---------- */
+  const notes20 = copies.map(c => c.note * 20 / devoirById[c.devoir_id].note_max);
+  const chrono = [...notes20].reverse(); // ordre chronologique
+  const nbThemesEvalues = new Set(copies.map(c => devoirById[c.devoir_id].theme)).size;
+  const BADGES = [
+    { ico: '🚀', nom: 'Premier pas', desc: 'Recevoir sa première copie corrigée', won: copies.length >= 1 },
+    { ico: '📚', nom: 'Régulier', desc: 'Trois copies corrigées ou plus', won: copies.length >= 3 },
+    { ico: '📈', nom: 'En progrès', desc: 'Faire mieux que sa copie précédente', won: chrono.some((n, i) => i > 0 && n > chrono[i - 1]) },
+    { ico: '🎯', nom: 'Cap des 12', desc: 'Obtenir au moins 12/20', won: notes20.some(n => n >= 12) },
+    { ico: '⭐', nom: 'Mention Bien', desc: 'Obtenir au moins 14/20', won: notes20.some(n => n >= 14) },
+    { ico: '🏆', nom: 'Excellence', desc: 'Obtenir au moins 16/20', won: notes20.some(n => n >= 16) },
+    { ico: '💯', nom: 'Question parfaite', desc: 'Tous les points sur une question', won: copies.some(c => (c.retours || []).some(r => r.points === r.points_max)) },
+    { ico: '🗺️', nom: 'Explorateur', desc: 'Être évalué sur 3 thèmes différents', won: nbThemesEvalues >= 3 },
+    { ico: '🔥', nom: 'Au-dessus du lot', desc: 'Dépasser la moyenne de classe deux fois', won: copies.filter(c => c.moyenne_classe != null && c.note > c.moyenne_classe).length >= 2 }
+  ];
+  document.getElementById('badges-list').innerHTML = BADGES.map(b =>
+    `<div class="badge ${b.won ? 'won' : ''}"><div class="ico">${b.ico}</div><b>${b.nom}</b><span>${b.desc}</span></div>`
+  ).join('');
+
+  /* ---------- Navigation ---------- */
+  document.querySelectorAll('nav button').forEach(b => b.onclick = () => {
+    document.querySelectorAll('nav button').forEach(x => x.classList.remove('on'));
+    document.querySelectorAll('.page').forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    document.getElementById('page-' + b.dataset.page).classList.add('on');
+    window.scrollTo({ top: 0 });
+  });
+
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('../sw.js');
+})();
+</script>
+</body>
+</html>

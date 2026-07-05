@@ -1,0 +1,132 @@
+{
+  "classes": {
+    "1STMG": {
+      "nom": "Première STMG",
+      "accent": "#F2A65A"
+    },
+    "TSTMG": {
+      "nom": "Terminale STMG",
+      "accent": "#E8735A"
+    }
+  },
+  "programme": {
+    "1STMG": {
+      "droit": [
+        {
+          "id": "d1",
+          "titre": "Qu'est-ce que le droit ?"
+        },
+        {
+          "id": "d2",
+          "titre": "Comment le droit permet-il de régler un litige ?"
+        },
+        {
+          "id": "d3",
+          "titre": "Qui peut faire valoir ses droits ?"
+        },
+        {
+          "id": "d4",
+          "titre": "Quels sont les droits reconnus aux personnes ?"
+        }
+      ],
+      "eco": [
+        {
+          "id": "e1",
+          "titre": "Quelles sont les grandes questions économiques et leurs enjeux ?"
+        },
+        {
+          "id": "e2",
+          "titre": "Comment se crée et se répartit la richesse ?"
+        },
+        {
+          "id": "e3",
+          "titre": "Comment les ménages décident-ils d'affecter leur revenu ?"
+        },
+        {
+          "id": "e4",
+          "titre": "Quels modes de financement de l'activité économique ?"
+        },
+        {
+          "id": "e5",
+          "titre": "Les marchés des biens et services sont-ils concurrentiels ?"
+        }
+      ]
+    },
+    "TSTMG": {
+      "droit": [
+        {
+          "id": "d5",
+          "titre": "Quel est le rôle du contrat ?"
+        },
+        {
+          "id": "d6",
+          "titre": "Qu'est-ce qu'être responsable ?"
+        },
+        {
+          "id": "d7",
+          "titre": "Comment le droit encadre-t-il la relation de travail ?"
+        },
+        {
+          "id": "d8",
+          "titre": "Dans quel cadre et comment entreprendre ?"
+        }
+      ],
+      "eco": [
+        {
+          "id": "e6",
+          "titre": "Comment l'État peut-il intervenir dans l'économie ?"
+        },
+        {
+          "id": "e7",
+          "titre": "Quelle est l'influence de l'État sur l'évolution de l'emploi et du chômage ?"
+        },
+        {
+          "id": "e8",
+          "titre": "Comment organiser le commerce international dans un contexte d'ouverture des échanges ?"
+        },
+        {
+          "id": "e9",
+          "titre": "Comment concilier la croissance économique et le développement durable ?"
+        }
+      ]
+    }
+  },
+  "devoirs": [
+    {
+      "id": "1s-demo-1",
+      "classe": "1STMG",
+      "matiere": "droit",
+      "theme": "d2",
+      "titre": "Devoir n°1 — Le litige et sa résolution",
+      "date": "2026-09-25",
+      "note_max": 20
+    },
+    {
+      "id": "1s-demo-2",
+      "classe": "1STMG",
+      "matiere": "eco",
+      "theme": "e1",
+      "titre": "Devoir n°2 — Les grandes questions économiques",
+      "date": "2026-10-16",
+      "note_max": 20
+    },
+    {
+      "id": "ts-demo-1",
+      "classe": "TSTMG",
+      "matiere": "droit",
+      "theme": "d5",
+      "titre": "Devoir n°1 — Le contrat de vente",
+      "date": "2026-09-22",
+      "note_max": 20
+    },
+    {
+      "id": "ts-demo-2",
+      "classe": "TSTMG",
+      "matiere": "eco",
+      "theme": "e6",
+      "titre": "Devoir n°2 — L'intervention de l'État",
+      "date": "2026-10-13",
+      "note_max": 20
+    }
+  ]
+}
