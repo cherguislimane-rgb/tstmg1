@@ -127,6 +127,15 @@
       "titre": "Devoir n°2 — L'intervention de l'État",
       "date": "2026-10-13",
       "note_max": 20
+    },
+    {
+      "id": "ts-droit-t3c1",
+      "classe": "TSTMG",
+      "matiere": "droit",
+      "theme": "d7",
+      "titre": "Droit — Le contrat de travail (Thème 3, chap. 1)",
+      "date": "2026-07-08",
+      "note_max": 20
     }
   ]
 }
