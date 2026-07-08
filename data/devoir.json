@@ -1,0 +1,10 @@
+{
+  "id": "ts-droit-t3c1",
+  "classe": "TSTMG",
+  "matiere": "droit",
+  "theme": "d7",
+  "titre": "Droit — Le contrat de travail (Thème 3, chap. 1)",
+  "date": "2026-07-08",
+  "note_max": 20,
+  "_note": "theme d7 = « Comment le droit encadre-t-il la relation de travail ? » dans data/devoirs.json de l'app. Mets à jour la date avec la date réelle du devoir avant l'export."
+}
