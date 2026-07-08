@@ -2,5 +2,177 @@
   "code": "pw39v9",
   "classe": "TSTMG",
   "maj": "2026-07-08",
-  "copies": []
+  "copies": [
+    {
+      "devoir_id": "ts-droit-t3c1",
+      "note": 4.0,
+      "moyenne_classe": 7.1,
+      "percentile": 13,
+      "effectif": 31,
+      "pdf": null,
+      "retours": [
+        {
+          "question": "Q1",
+          "intitule": "Par quoi sont liées les parties cocontractantes ?",
+          "points": 0.5,
+          "points_max": 0.75,
+          "commentaire": "Vous identifiez bien le contrat de travail. Pensez à nommer la qualité juridique de chaque partie : Jimmy est le salarié, l'entreprise est l'employeur."
+        },
+        {
+          "question": "Q2",
+          "intitule": "Que doivent respecter les parties lors de la signature ?",
+          "points": 0.5,
+          "points_max": 0.5,
+          "commentaire": "Vous voyez juste : les parties doivent respecter les obligations créées, modifiées, transmises ou éteintes par le contrat. La formulation gagnerait en clarté mais l'idée d'obligation est bien là."
+        },
+        {
+          "question": "Q3",
+          "intitule": "Éléments définissant le contrat de travail",
+          "points": 1.0,
+          "points_max": 1.25,
+          "commentaire": "Vous relevez bien la prestation de travail, la rémunération et l'organisation. Vous écrivez « sous la direction » mais il manque le terme exact attendu : le lien de subordination."
+        },
+        {
+          "question": "Q4",
+          "intitule": "Pouvoir né du lien de subordination + justification par la situation",
+          "points": 0.0,
+          "points_max": 1.5,
+          "commentaire": "Vous listez bien les trois prérogatives (donner des ordres, contrôler, sanctionner) mais vous ne les rattachez pas au pouvoir de direction, qui est le nom attendu. Il fallait ensuite justifier chacune par la situation de Jimmy (objectifs communiqués par Mme PERCHON, contrôle de leur validation, respect du règlement intérieur sous peine de sanctions)."
+        },
+        {
+          "question": "Q5",
+          "intitule": "Comment les salariés sont-ils protégés par le droit français ?",
+          "points": 0.0,
+          "points_max": 0.5,
+          "commentaire": "Question laissée sans réponse. Il fallait indiquer que les salariés sont protégés par la loi, et plus particulièrement par le Code du travail (congés payés, durée du travail, rémunération minimale…)."
+        },
+        {
+          "question": "Bonus",
+          "intitule": "Tribunal compétent employeur/salarié (hors barème)",
+          "points": 0.0,
+          "points_max": 0.5,
+          "commentaire": "Question bonus laissée sans réponse. Le tribunal compétent pour un litige entre un employeur et un salarié est le conseil de prud'hommes."
+        },
+        {
+          "question": "Q6",
+          "intitule": "Classer les trois pouvoirs de l'employeur (tableau)",
+          "points": 1.5,
+          "points_max": 1.5,
+          "commentaire": "Tableau bien complété : les trois pouvoirs sont correctement illustrés par les bons éléments de la situation (communication des objectifs, présentation du règlement intérieur, retenue de 400 € contre Rosita). Bon travail."
+        },
+        {
+          "question": "Q7",
+          "intitule": "Complémentarité des trois pouvoirs",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Votre réponse reste confuse et ne montre pas clairement l'articulation : l'employeur organise l'entreprise (direction), édicte les règles (réglementaire) puis les fait respecter (disciplinaire). Il fallait conclure que cet ensemble fait de lui le chef d'entreprise et assure le bon fonctionnement."
+        },
+        {
+          "question": "Q8",
+          "intitule": "Le règlement intérieur n'est pas librement déterminé",
+          "points": 0.5,
+          "points_max": 1,
+          "commentaire": "Vous citez bien le contrôle de l'inspecteur du travail, qui peut exiger le retrait ou la modification des dispositions contraires à la loi. Il manquait le premier point : le contenu du règlement intérieur est fixé exclusivement par la loi (art. L.1321-1), l'employeur ne le détermine donc pas librement."
+        },
+        {
+          "question": "Q9",
+          "intitule": "Justification du pouvoir disciplinaire",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question laissée sans réponse. Il fallait relier le pouvoir disciplinaire au lien de subordination : la faute du salarié nuit au fonctionnement de l'organisation, ce qui justifie la sanction (ex. non-respect du règlement, refus d'un ordre, injures)."
+        },
+        {
+          "question": "Q10",
+          "intitule": "Sanction pécuniaire vs sanction à incidence pécuniaire",
+          "points": 0.0,
+          "points_max": 1,
+          "commentaire": "Question laissée sans réponse. La sanction pécuniaire est une amende retirée directement du salaire : elle est interdite. La sanction à incidence pécuniaire coûte indirectement (ex. mise à pied qui suspend la rémunération) : elle est autorisée."
+        },
+        {
+          "question": "Q11",
+          "intitule": "Pourquoi la retenue de 400 € est-elle impossible ?",
+          "points": 0.0,
+          "points_max": 1,
+          "commentaire": "Question laissée sans réponse. Retirer 400 € du salaire de Rosita est une sanction pécuniaire (une amende), qui fait partie des sanctions interdites par la loi."
+        },
+        {
+          "question": "Q12",
+          "intitule": "Proposer une sanction proportionnée + justification",
+          "points": 0.0,
+          "points_max": 1,
+          "commentaire": "Question laissée sans réponse. Il fallait proposer une sanction licite et proportionnée (un avertissement ou une mise à pied) et la justifier par le principe de proportionnalité : la sanction doit être à la mesure de la faute."
+        },
+        {
+          "question": "Q13",
+          "intitule": "Points communs et élément distinctif des deux contrats",
+          "points": 0.0,
+          "points_max": 1,
+          "commentaire": "Question laissée sans réponse. Points communs : une prestation de travail et une rémunération. Élément distinctif : le lien de subordination du salarié, contre l'indépendance du prestataire."
+        },
+        {
+          "question": "Q14",
+          "intitule": "Pourquoi les chauffeurs Uber sont-ils des indépendants ?",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question laissée sans réponse. Les chauffeurs Uber ne sont pas liés par un contrat de travail : ils exercent à titre indépendant, après s'être immatriculés au CFE de la Chambre des Métiers et de l'Artisanat, avant de s'inscrire sur la plateforme."
+        },
+        {
+          "question": "Q15",
+          "intitule": "Critère retenu par les prud'hommes de Paris en 2017",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question laissée sans réponse. Le critère retenu est l'indépendance du travailleur : le chauffeur avait « toute liberté pour travailler selon les horaires et les jours qui lui convenaient »."
+        },
+        {
+          "question": "Q16",
+          "intitule": "Constatations permettant la requalification en contrat de travail",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question laissée sans réponse. Il fallait relever au moins deux indices de subordination (pas de numéro du client, courses acceptées à l'aveugle, commission fixée unilatéralement de 20 à 25 %) et conclure au pouvoir de direction d'Uber justifiant la requalification."
+        },
+        {
+          "question": "Q17",
+          "intitule": "Sources des obligations à respecter par Tatiana",
+          "points": 0.0,
+          "points_max": 1.25,
+          "commentaire": "Question laissée sans réponse. Les trois sources sont : les règles d'ordre public issues de la loi (Code du travail), les normes conventionnelles (accords collectifs des partenaires sociaux) et le contrat de travail lui-même."
+        },
+        {
+          "question": "Q18",
+          "intitule": "Différence accord d'entreprise / convention collective",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question laissée sans réponse. L'accord d'entreprise est négocié au niveau de l'entreprise pour l'adapter à ses spécificités ; la convention collective est conclue au niveau d'une branche d'activité entre partenaires sociaux."
+        },
+        {
+          "question": "Q19",
+          "intitule": "Les partenaires sociaux à l'origine du droit négocié",
+          "points": 0.0,
+          "points_max": 0.5,
+          "commentaire": "Question laissée sans réponse. Les partenaires sociaux sont les syndicats de salariés (CFDT, CGT, FO…) d'une part, et les organisations patronales (MEDEF, CPME, U2P) ou l'employeur d'autre part."
+        },
+        {
+          "question": "Q20",
+          "intitule": "Intérêt de négocier au niveau national ET de l'entreprise",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question laissée sans réponse. Au niveau national (branche), les accords complètent les textes de portée générale ; au niveau de l'entreprise, ils adaptent les règles à ses spécificités, dans l'intérêt des salariés et de l'employeur."
+        },
+        {
+          "question": "Q21",
+          "intitule": "Modalités d'exécution du travail dans le CDI (doc. 14)",
+          "points": 0.0,
+          "points_max": 0.5,
+          "commentaire": "Question laissée sans réponse. Le CDI précise plusieurs modalités : la fonction (aide-comptable), le lieu d'exercice (siège social à Toulon), la durée et les horaires (35 h hebdomadaires)."
+        },
+        {
+          "question": "Q22",
+          "intitule": "Correspondances langage courant / formulations juridiques",
+          "points": 0.0,
+          "points_max": 1.5,
+          "commentaire": "Exercice d'appariement laissé sans réponse. Les correspondances attendues étaient : 1→c, 2→a, 3→e, 4→d, 5→f, 6→b."
+        }
+      ]
+    }
+  ]
 }

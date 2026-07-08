@@ -2,5 +2,177 @@
   "code": "sd4u79",
   "classe": "TSTMG",
   "maj": "2026-07-08",
-  "copies": []
+  "copies": [
+    {
+      "devoir_id": "ts-droit-t3c1",
+      "note": 9.75,
+      "moyenne_classe": 7.1,
+      "percentile": 68,
+      "effectif": 31,
+      "pdf": null,
+      "retours": [
+        {
+          "question": "Q1",
+          "intitule": "Par quoi sont liées les parties cocontractantes ?",
+          "points": 0.5,
+          "points_max": 0.75,
+          "commentaire": "Vous identifiez bien le contrat de travail. Pensez à préciser la qualité juridique de chaque partie : Jimmy est le salarié, l'entreprise est l'employeur."
+        },
+        {
+          "question": "Q2",
+          "intitule": "Que doivent respecter les parties lors de la signature ?",
+          "points": 0.5,
+          "points_max": 0.5,
+          "commentaire": "Votre idée que le salarié doit fournir le travail demandé en échange du salaire et respecter les règles de l'entreprise renvoie bien aux obligations nées du contrat. Employez directement le mot « obligations » pour être plus juridique."
+        },
+        {
+          "question": "Q3",
+          "intitule": "Éléments définissant le contrat de travail",
+          "points": 0.5,
+          "points_max": 1.25,
+          "commentaire": "Vous citez le lien de subordination, ce qui est le point clé. Mais la question demandait de relever TOUS les éléments de la définition du document 2 : la prestation de travail, la rémunération (salaire) et le fait d'agir pour le compte et sous la direction d'un employeur. Reprenez la définition complète."
+        },
+        {
+          "question": "Q4",
+          "intitule": "Pouvoir né du lien de subordination + justification par la situation",
+          "points": 1.0,
+          "points_max": 1.5,
+          "commentaire": "Vous nommez le pouvoir de direction et rappelez ses trois volets (ordres, contrôle, sanction). Le contrôle et la sanction sont bien reliés à la situation de Jimmy (objectifs validés régulièrement, respect du règlement sous peine de sanctions). Pensez aussi à illustrer « donner des ordres » par les objectifs et tâches que Mme PERCHON communique en début de mois."
+        },
+        {
+          "question": "Q5",
+          "intitule": "Comment les salariés sont-ils protégés par le droit français ?",
+          "points": 0.5,
+          "points_max": 0.5,
+          "commentaire": "Vous citez bien la loi et le Code du travail comme source de protection : c'est l'essentiel attendu. En revanche, la suite (article 1101, accord de volonté) confond la définition du contrat en général avec la protection du salarié : restez sur les règles protectrices du Code du travail (congés payés, durée du travail, salaire minimum)."
+        },
+        {
+          "question": "Bonus",
+          "intitule": "Tribunal compétent employeur/salarié (hors barème)",
+          "points": 0.0,
+          "points_max": 0.5,
+          "commentaire": "Question non traitée. Le tribunal compétent pour un litige entre un employeur et un salarié est le conseil de prud'hommes."
+        },
+        {
+          "question": "Q6",
+          "intitule": "Classer les trois pouvoirs de l'employeur (tableau)",
+          "points": 1.5,
+          "points_max": 1.5,
+          "commentaire": "Tableau entièrement correct : communication des objectifs/tâches pour la direction, présentation du règlement intérieur pour le réglementaire, retrait des 400 € pour le disciplinaire. Très bien."
+        },
+        {
+          "question": "Q7",
+          "intitule": "Complémentarité des trois pouvoirs",
+          "points": 0.75,
+          "points_max": 0.75,
+          "commentaire": "Vous articulez bien les trois pouvoirs (organiser l'activité, édicter les règles, sanctionner en cas de faute) et vous concluez sur le bon fonctionnement de l'entreprise. Réponse solide."
+        },
+        {
+          "question": "Q8",
+          "intitule": "Le règlement intérieur n'est pas librement déterminé",
+          "points": 0.5,
+          "points_max": 1,
+          "commentaire": "Vous relevez bien le contrôle de l'inspecteur du travail, qui peut exiger le retrait ou la modification des dispositions illégales. Ajoutez le premier point : c'est la loi (art. L.1321-1) qui fixe « exclusivement » le contenu du règlement intérieur, l'employeur n'est donc pas libre."
+        },
+        {
+          "question": "Q9",
+          "intitule": "Justification du pouvoir disciplinaire",
+          "points": 0.25,
+          "points_max": 0.75,
+          "commentaire": "Vous reliez la sanction à la faute, ce qui touche l'idée du bon fonctionnement de l'organisation. La réponse reste trop courte et un peu circulaire : reliez explicitement le pouvoir disciplinaire au lien de subordination (respect de la hiérarchie et des consignes) et donnez au moins un exemple de faute (refus d'un ordre, injure, négligence)."
+        },
+        {
+          "question": "Q10",
+          "intitule": "Sanction pécuniaire vs sanction à incidence pécuniaire",
+          "points": 0.5,
+          "points_max": 1,
+          "commentaire": "Vous identifiez la sanction pécuniaire comme une amende, ce qui est juste. La suite est confuse : la sanction à incidence pécuniaire coûte INDIRECTEMENT au salarié (ex. une mise à pied qui suspend travail et rémunération) et elle, contrairement à l'amende, n'est pas interdite. Cette distinction directe/indirecte devait être clairement posée."
+        },
+        {
+          "question": "Q11",
+          "intitule": "Pourquoi la retenue de 400 € est-elle impossible ?",
+          "points": 1.0,
+          "points_max": 1,
+          "commentaire": "Parfait : vous qualifiez la retenue des 400 € de sanction pécuniaire (amende) et vous précisez qu'elle est interdite par la loi. Réponse complète."
+        },
+        {
+          "question": "Q12",
+          "intitule": "Proposer une sanction proportionnée + justification",
+          "points": 0.5,
+          "points_max": 1,
+          "commentaire": "Vous proposez des sanctions licites (mise à pied, avertissement, rétrogradation). Attention toutefois : le licenciement est disproportionné pour une première insulte. Surtout, il fallait choisir UNE sanction et la justifier par le principe de proportionnalité (la sanction doit être égale à la faute), ce qui manque ici."
+        },
+        {
+          "question": "Q13",
+          "intitule": "Points communs et élément distinctif des deux contrats",
+          "points": 1.0,
+          "points_max": 1,
+          "commentaire": "Vous relevez bien les deux points communs (prestation de travail et rémunération) et l'élément distinctif (lien de subordination du salarié face à l'indépendance du travailleur). Prenez soin de bien séparer ce qui est commun de ce qui distingue, car votre phrase les mélange un peu."
+        },
+        {
+          "question": "Q14",
+          "intitule": "Pourquoi les chauffeurs Uber sont-ils des indépendants ?",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Votre réponse (« considéré comme prestation de service ») ne répond pas vraiment à la question. Il fallait dire que le chauffeur n'a pas de contrat de travail avec Uber et qu'il crée d'abord son statut d'indépendant en s'immatriculant au CFE de la Chambre des Métiers avant de s'inscrire sur la plateforme."
+        },
+        {
+          "question": "Q15",
+          "intitule": "Critère retenu par les prud'hommes de Paris en 2017",
+          "points": 0.75,
+          "points_max": 0.75,
+          "commentaire": "Vous nommez le critère d'indépendance et vous citez la liberté des horaires : c'est bien le critère retenu par les prud'hommes en 2017. Soignez la formulation, car la fin de la phrase est difficile à lire."
+        },
+        {
+          "question": "Q16",
+          "intitule": "Constatations permettant la requalification en contrat de travail",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question non traitée. Il fallait relever des indices de subordination tirés du document (pas de numéro du client, courses acceptées à l'aveugle, commission fixée unilatéralement de 20 à 25 %) et conclure que ce pouvoir de direction d'Uber justifie la requalification en contrat de travail."
+        },
+        {
+          "question": "Q17",
+          "intitule": "Sources des obligations à respecter par Tatiana",
+          "points": 0.0,
+          "points_max": 1.25,
+          "commentaire": "Question non traitée. Tatiana doit respecter trois sources : les règles d'ordre public issues de la loi (Code du travail), les normes conventionnelles (accords collectifs des partenaires sociaux) et le contrat de travail lui-même."
+        },
+        {
+          "question": "Q18",
+          "intitule": "Différence accord d'entreprise / convention collective",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question non traitée. L'accord d'entreprise est négocié au niveau de l'entreprise pour l'adapter à ses spécificités, tandis que la convention collective est conclue au niveau d'une branche d'activité entre partenaires sociaux."
+        },
+        {
+          "question": "Q19",
+          "intitule": "Les partenaires sociaux à l'origine du droit négocié",
+          "points": 0.0,
+          "points_max": 0.5,
+          "commentaire": "Question non traitée. Les partenaires sociaux sont, d'un côté, les syndicats de salariés (CFDT, CGT, FO…) et, de l'autre, les organisations patronales ou l'employeur (MEDEF, CPME, U2P)."
+        },
+        {
+          "question": "Q20",
+          "intitule": "Intérêt de négocier au niveau national ET de l'entreprise",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question non traitée. Au niveau national (branche), la négociation améliore des règles de portée générale ; au niveau de l'entreprise, elle adapte ces règles aux spécificités de l'organisation."
+        },
+        {
+          "question": "Q21",
+          "intitule": "Modalités d'exécution du travail dans le CDI (doc. 14)",
+          "points": 0.0,
+          "points_max": 0.5,
+          "commentaire": "Question non traitée. Le CDI (doc. 14) précise plusieurs modalités : la fonction (aide-comptable), le lieu (siège social à Toulon) et la durée du travail (35 h hebdomadaires)."
+        },
+        {
+          "question": "Q22",
+          "intitule": "Correspondances langage courant / formulations juridiques",
+          "points": 0.0,
+          "points_max": 1.5,
+          "commentaire": "Appariement non réalisé (aucune flèche tracée). Les bonnes correspondances étaient : 1→c, 2→a, 3→e, 4→d, 5→f, 6→b."
+        }
+      ]
+    }
+  ]
 }

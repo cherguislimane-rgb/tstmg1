@@ -2,5 +2,177 @@
   "code": "gaagas",
   "classe": "TSTMG",
   "maj": "2026-07-08",
-  "copies": []
+  "copies": [
+    {
+      "devoir_id": "ts-droit-t3c1",
+      "note": 5.75,
+      "moyenne_classe": 7.1,
+      "percentile": 35,
+      "effectif": 31,
+      "pdf": null,
+      "retours": [
+        {
+          "question": "Q1",
+          "intitule": "Par quoi sont liées les parties cocontractantes ?",
+          "points": 0.5,
+          "points_max": 0.75,
+          "commentaire": "Tu identifies bien le contrat de travail. Pense à préciser la qualité juridique de chaque partie : Jimmy est le salarié et l'entreprise est l'employeur."
+        },
+        {
+          "question": "Q2",
+          "intitule": "Que doivent respecter les parties lors de la signature ?",
+          "points": 0.5,
+          "points_max": 0.5,
+          "commentaire": "Réponse correcte : tu cites l'article 1101 et le fait que le contrat crée des obligations à respecter. C'est exactement ce qui était attendu."
+        },
+        {
+          "question": "Q3",
+          "intitule": "Éléments définissant le contrat de travail",
+          "points": 0.75,
+          "points_max": 1.25,
+          "commentaire": "Tu relèves bien la prestation de travail, la rémunération et le rôle de l'employeur. Il manque l'élément le plus important : le lien de subordination (« sous la direction de l'employeur »), qui est déterminant."
+        },
+        {
+          "question": "Q4",
+          "intitule": "Pouvoir né du lien de subordination + justification par la situation",
+          "points": 0.5,
+          "points_max": 1.5,
+          "commentaire": "Tu nommes bien le pouvoir de direction et ses trois volets. Mais tu recopies le document 3 sans l'appliquer à Jimmy : il fallait justifier chaque volet avec la situation (Mme PERCHON communique les objectifs, veille à leur validation, contrôle le respect du règlement intérieur)."
+        },
+        {
+          "question": "Q5",
+          "intitule": "Comment les salariés sont-ils protégés par le droit français ?",
+          "points": 0.5,
+          "points_max": 0.5,
+          "commentaire": "Parfait : tu cites bien le Code du travail comme source de protection, avec des exemples pertinents (congés payés, durée du travail, rémunération minimale)."
+        },
+        {
+          "question": "Bonus",
+          "intitule": "Tribunal compétent employeur/salarié (hors barème)",
+          "points": 0.5,
+          "points_max": 0.5,
+          "commentaire": "Bonne réponse : le conseil de prud'hommes est bien le tribunal compétent pour un litige entre employeur et salarié."
+        },
+        {
+          "question": "Q6",
+          "intitule": "Classer les trois pouvoirs de l'employeur (tableau)",
+          "points": 1.5,
+          "points_max": 1.5,
+          "commentaire": "Excellent : tu classes correctement les trois pouvoirs avec, pour chacun, le bon élément de la situation. Rien à ajouter."
+        },
+        {
+          "question": "Q7",
+          "intitule": "Complémentarité des trois pouvoirs",
+          "points": 0.5,
+          "points_max": 0.75,
+          "commentaire": "Tu montres bien comment les trois pouvoirs s'articulent (diriger, réglementer, sanctionner). Il te manquait une phrase de conclusion : c'est cet ensemble qui fait de l'employeur le chef d'entreprise et assure le bon fonctionnement de l'organisation."
+        },
+        {
+          "question": "Q8",
+          "intitule": "Le règlement intérieur n'est pas librement déterminé",
+          "points": 0.0,
+          "points_max": 1,
+          "commentaire": "Tu perçois que l'employeur n'est pas totalement libre, mais la réponse reste vague. Il fallait dire que la loi (art. L.1321-1) fixe exclusivement le contenu du règlement intérieur, et que l'inspecteur du travail peut à tout moment en exiger le retrait ou la modification."
+        },
+        {
+          "question": "Q9",
+          "intitule": "Justification du pouvoir disciplinaire",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Ta réponse reste sur l'idée que le chef est un « leader », sans répondre à la question. Il fallait relier le pouvoir disciplinaire au lien de subordination, expliquer que la faute nuit au fonctionnement de l'entreprise, et donner un exemple de comportement fautif (injure, refus d'un ordre…)."
+        },
+        {
+          "question": "Q10",
+          "intitule": "Sanction pécuniaire vs sanction à incidence pécuniaire",
+          "points": 0.0,
+          "points_max": 1,
+          "commentaire": "Question non traitée. La sanction pécuniaire est une amende retenue directement sur le salaire (interdite) ; la sanction à incidence pécuniaire coûte indirectement au salarié (ex. mise à pied qui suspend salaire et travail) et reste autorisée."
+        },
+        {
+          "question": "Q11",
+          "intitule": "Pourquoi la retenue de 400 € est-elle impossible ?",
+          "points": 0.0,
+          "points_max": 1,
+          "commentaire": "Question non traitée. Retirer 400 € du salaire de Rosita est une sanction pécuniaire (une amende), qui fait partie des sanctions interdites par la loi."
+        },
+        {
+          "question": "Q12",
+          "intitule": "Proposer une sanction proportionnée + justification",
+          "points": 0.0,
+          "points_max": 1,
+          "commentaire": "Question non traitée. Tu pouvais proposer un avertissement ou une mise à pied, puis justifier par le principe de proportionnalité : la sanction doit être proportionnée à la faute (ici une insulte en réunion)."
+        },
+        {
+          "question": "Q13",
+          "intitule": "Points communs et élément distinctif des deux contrats",
+          "points": 0.5,
+          "points_max": 1,
+          "commentaire": "Tu identifies bien les deux points communs (prestation de travail et rémunération). Il manquait l'élément distinctif : le lien de subordination du salarié, contre l'indépendance du prestataire."
+        },
+        {
+          "question": "Q14",
+          "intitule": "Pourquoi les chauffeurs Uber sont-ils des indépendants ?",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question non traitée. Les chauffeurs ne sont pas liés par un contrat de travail : ils créent un statut d'indépendant (immatriculation au CFE de la Chambre des Métiers) avant de s'inscrire sur la plateforme Uber."
+        },
+        {
+          "question": "Q15",
+          "intitule": "Critère retenu par les prud'hommes de Paris en 2017",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question non traitée. Le critère retenu est l'indépendance du travailleur : le chauffeur avait « toute liberté pour travailler selon les horaires et les jours qui lui convenaient »."
+        },
+        {
+          "question": "Q16",
+          "intitule": "Constatations permettant la requalification en contrat de travail",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question non traitée. Il fallait relever des indices de subordination (pas de numéro du client, courses acceptées à l'aveugle, commission fixée unilatéralement de 20 à 25 %) pour montrer un pouvoir de direction d'Uber justifiant la requalification."
+        },
+        {
+          "question": "Q17",
+          "intitule": "Sources des obligations à respecter par Tatiana",
+          "points": 0.0,
+          "points_max": 1.25,
+          "commentaire": "Question non traitée. Les trois sources attendues étaient : les règles d'ordre public (loi/Code du travail), les normes conventionnelles (accords collectifs des partenaires sociaux) et le contrat de travail lui-même."
+        },
+        {
+          "question": "Q18",
+          "intitule": "Différence accord d'entreprise / convention collective",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question non traitée. L'accord d'entreprise est négocié au niveau de l'entreprise ; la convention collective est conclue au niveau d'une branche d'activité, entre partenaires sociaux."
+        },
+        {
+          "question": "Q19",
+          "intitule": "Les partenaires sociaux à l'origine du droit négocié",
+          "points": 0.0,
+          "points_max": 0.5,
+          "commentaire": "Question non traitée. Les partenaires sociaux sont les syndicats de salariés (CFDT, CGT, FO…) d'un côté et les organisations patronales (MEDEF, CPME, U2P) de l'autre."
+        },
+        {
+          "question": "Q20",
+          "intitule": "Intérêt de négocier au niveau national ET de l'entreprise",
+          "points": 0.0,
+          "points_max": 0.75,
+          "commentaire": "Question non traitée. Au niveau national/branche, les accords complètent les règles de portée générale ; au niveau de l'entreprise, ils adaptent les règles à ses spécificités."
+        },
+        {
+          "question": "Q21",
+          "intitule": "Modalités d'exécution du travail dans le CDI (doc. 14)",
+          "points": 0.0,
+          "points_max": 0.5,
+          "commentaire": "Question non traitée. Le CDI (doc. 14) précisait plusieurs modalités : la fonction (aide-comptable), le lieu (siège social à Toulon) et la durée du travail (35 h hebdomadaires)."
+        },
+        {
+          "question": "Q22",
+          "intitule": "Correspondances langage courant / formulations juridiques",
+          "points": 0.0,
+          "points_max": 1.5,
+          "commentaire": "Aucune flèche n'a été tracée. Les bonnes correspondances étaient : 1→c, 2→a, 3→e, 4→d, 5→f, 6→b."
+        }
+      ]
+    }
+  ]
 }
